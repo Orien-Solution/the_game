@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body onkeyup="KeyLisiner(event);">
+<body onkeyup="KeyLisiner(event);" onload="WoodcutterAnimationStart();">
 
     <div class=" col-12 p-5">
         <div class="row mt-3 mb-3">
