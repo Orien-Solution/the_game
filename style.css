@@ -28,3 +28,17 @@
     background-size: cover;
     position: absolute;
 }
+
+.tile-contain-top {
+    width: 300px;
+    height: 32px;
+    background-image: url("resources/1 Tiles/Tile_02.png");
+    position: absolute;
+}
+
+.tile-contain-middle {
+    width: 300px;
+    height: 224px;
+    background-image: url("resources/1 Tiles/Tile_12.png");
+    position: absolute;
+}
