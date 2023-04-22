@@ -1,3 +1,9 @@
 .bg-col-1 {
     background-color: rgb(18, 231, 231);
 }
+
+.Woodcutter {
+    width: 48px;
+    height: 48px;
+    background-image: url(resources/Character/Woodcutter/Woodcutter_attack1.png);
+}
