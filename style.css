@@ -3,7 +3,19 @@
 }
 
 .Woodcutter {
+    margin-left: 100px;
+    margin-top: 50px;
     width: 48px;
     height: 48px;
-    background-image: url(resources/Character/Woodcutter/Woodcutter_attack1.png);
+    background-image: url(resources/Character/Woodcutter/Woodcutter_idle.png);
+    transform: scale(2);
+}
+
+.WoodcutterBack {
+    transform: scale(-2);
+    margin-left: 100px;
+    margin-top: 50px;
+    width: 48px;
+    height: 48px;
+    background-image: url(resources/Character/Woodcutter/Woodcutter_idle.png);
 }
