@@ -128,6 +128,7 @@ function WoodcutterAttck3Animation() {
 function WoodcutterAttck1BackAnimation() {
 
     Woodcutter.style.backgroundImage = "url(resources/Character/Woodcutter/Woodcutter_walk.png)";
+    Woodcutter.className = "WoodcutterBack";
     alert("ok");
     ///back scale(-)
     alert("ok1");
