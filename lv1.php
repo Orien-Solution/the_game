@@ -8,6 +8,7 @@
 
     <title>The Game</title>
     <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -16,10 +17,8 @@
     <div class="container-fluid" style="width: 100%; height: 100vh;">
         <div class="row justify-content-center">
 
-            <div class="col-6 bg bg-danger">
-                <h2>The Game Name</h2>
-            </div>
 
+         
         </div>
     </div>
 
