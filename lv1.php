@@ -12,16 +12,23 @@
 
 </head>
 
-<body>
+<body style=" overflow: hidden;  padding: 0px; margin: 0px;">
 
-    <div class="container-fluid bg-col-1" style="width: 100%; height: 100vh;">
-        <div class="row justify-content-center align-bottom">
+    <div class="container-fluid" style="width: 100%; height: 100vh;">
 
-<div class="col-12">
-<span class="align-bottom">bottum</span>
-</div>
-         
+        <div class="row">
+
+            <div class="col-12 container " style="padding: 0px; margin: 0px">
+                
+                    <div class="bg-forest d-flex" style=" background-color:#50E8E7;">
+
+                    </div>
+              
+
+            </div>
         </div>
+
+
     </div>
 
 </body>

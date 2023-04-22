@@ -6,22 +6,12 @@ var WoodcutterAttack1AnimationId = 0;
 
 function WoodcutterAttack1Animation() {
     WoodcutterBackgroundPositionX = WoodcutterBackgroundPositionX - 48;
-    Woodcutter.style.backgroundPositionX = WoodcutterBackgroundPositionX = "px";
+    Woodcutter.style.backgroundPositionX = WoodcutterBackgroundPositionX + "px";
 }
 
 function WoodcutterAttack1AnimationStart() {
     WoodcutterAttack1AnimationId = setInterval(WoodcutterAttack1Animation, 100);
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
