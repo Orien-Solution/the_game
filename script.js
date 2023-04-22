@@ -20,6 +20,7 @@ var attack2Oness = 0;
 var attack3Oness = 0;
 var idleOness = 0;
 var walkOness = 0;
+var walkBackOness = 0;
 var climbOness = 0;
 
 function KeyLisiner(event) {
@@ -36,6 +37,7 @@ function KeyLisiner(event) {
             idleOness = 0;
             walkOness = 0;
             climbOness = 0;
+            walkBackOness = 0;
             attack1Oness = 1;
             WoodcutterAttck1Animation();
         }
@@ -44,7 +46,7 @@ function KeyLisiner(event) {
     } else if (KeyCode == 81) {
         if (attack2Oness == 0) {
             attack1Oness = 0;
-
+            walkBackOness = 0;
             attack3Oness = 0;
             idleOness = 0;
             walkOness = 0;
@@ -58,7 +60,7 @@ function KeyLisiner(event) {
             attack1Oness = 0;
             attack2Oness = 0;
             attack3Oness = 0;
-
+            walkBackOness = 0;
             walkOness = 0;
             climbOness = 0;
             idleOness = 1;
@@ -69,7 +71,7 @@ function KeyLisiner(event) {
         if (attack3Oness == 0) {
             attack1Oness = 0;
             attack2Oness = 0;
-
+            walkBackOness = 0;
             idleOness = 0;
             walkOness = 0;
             climbOness = 0;
@@ -78,7 +80,20 @@ function KeyLisiner(event) {
         }
     } else if (KeyCode == 65) {
         //A
-        WoodcutterAttck1BackAnimation();
+        if (walkBackOness == 0) {
+            attack1Oness = 0;
+            attack2Oness = 0;
+
+            idleOness = 0;
+            walkOness = 0;
+            climbOness = 0;
+            attack3Oness = 0;
+            walkBackOness = 1;
+            WoodcutterAttck1BackAnimation();
+        }
+
+
+
     } else if (KeyCode == 68) {
         //D
         if (walkOness == 0) {
@@ -86,9 +101,10 @@ function KeyLisiner(event) {
             attack2Oness = 0;
             attack3Oness = 0;
             idleOness = 0;
-
+            walkBackOness = 0;
             climbOness = 0;
             walkOness = 1;
+
             WoodcutterWalkAnimation();
         }
     } else if (KeyCode == 87) {
@@ -99,7 +115,7 @@ function KeyLisiner(event) {
             attack3Oness = 0;
             idleOness = 0;
             walkOness = 0;
-
+            walkBackOness = 0;
             climbOness = 1;
             WoodcutterClimbAnimation();
         }
@@ -123,28 +139,20 @@ function WoodcutterAttck3Animation() {
 
 }
 
-
-
 function WoodcutterAttck1BackAnimation() {
-
     Woodcutter.style.backgroundImage = "url(resources/Character/Woodcutter/Woodcutter_walk.png)";
     Woodcutter.className = "WoodcutterBack";
-    alert("ok");
-    ///back scale(-)
-    alert("ok1");
 }
 
 function WoodcutterAttack2Animation() {
     Woodcutter.style.backgroundImage = "url(resources/Character/Woodcutter/Woodcutter_attack2.png)";
-
 }
 
 function WoodcutterIdleAnimation() {
-
     Woodcutter.style.backgroundImage = "url(resources/Character/Woodcutter/Woodcutter_idle.png)";
 }
 
 function WoodcutterWalkAnimation() {
-
     Woodcutter.style.backgroundImage = "url(resources/Character/Woodcutter/Woodcutter_walk.png)";
+    Woodcutter.className = "Woodcutter";
 }
