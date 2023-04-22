@@ -19,3 +19,12 @@
     height: 48px;
     background-image: url(resources/Character/Woodcutter/Woodcutter_idle.png);
 }
+
+.bg-forest {
+    width: 100%;
+    height: 100vh;
+    background-image: url("resources/Background/Layers/3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+}
