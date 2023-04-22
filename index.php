@@ -13,7 +13,7 @@
 
 <body style="background-image: radial-gradient(circle,#F9E79F ,#FAD7A0,#F0B27A);">
 
-    <div class="container-fluid justify-content-center" style="width: 100%; height: 100vh;">
+    <div class="container-fluid" style="width: 100%; height: 100vh;">
         <div class="row justify-content-center">
 
             <div class="col-6 bg bg-light text-center col-12">
